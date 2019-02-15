@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <label
+    className="label"
+  >
+    label
+  </label>,
+  <input
+    className="input"
+    onBlur={[Function]}
+    required={false}
+    value="value"
+  />,
+  "",
+]
+`;

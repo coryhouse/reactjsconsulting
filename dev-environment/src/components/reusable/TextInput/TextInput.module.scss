@@ -1,0 +1,23 @@
+/* Consider https://github.com/gajus/babel-plugin-react-css-modules */
+@import "../../../variables";
+
+.label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: $fontSizeMedium;
+  color: $darkGray;
+  font-family: $fontFamily;
+  font-weight: bold;
+}
+
+.input {
+  border: 1px solid $lightgray;
+  padding: 0 10px;
+  height: 44px;
+  font-size: $fontSizeMedium;
+  font-weight: 400;
+}
+
+.error {
+  border-color: $red;
+}
