@@ -1,0 +1,72 @@
+.grid-container {
+  display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
+  overflow: auto;
+  padding-top: 15px;
+}
+
+th.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+td,
+th {
+  padding: 0px;
+  margin: 0px;
+}
+
+table.vehicles {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 7px;
+}
+
+th.timeslot {
+  color: gray;
+  font-weight: 100;
+  width: 30px;
+}
+
+td.timeslot {
+  /* border-right: solid 1px lightgray; */
+}
+
+.vehicle-type {
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+  position: sticky;
+  left: 0;
+  background-color: white;
+  padding-right: 10px;
+}
+
+.new-day {
+  border-left: solid 2px orange;
+}
+
+/* Must position date relative since we can only have one sticky header */
+/* And the first row determines the size of each cell */
+.date {
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+  width: 975px;
+  height: 17px;
+  top: -16px;
+  white-space: nowrap;
+  z-index: 90000;
+  overflow: visible;
+  text-align: center;
+  left: -150px;
+}
+
+/* necessary to offset the position of the relative positioned date label above. */
+.first-hour {
+  position: relative;
+  top: -9px;
+}

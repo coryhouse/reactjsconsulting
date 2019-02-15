@@ -1,0 +1,14 @@
+.checkboxlist-wrapper {
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+
+.checkboxlist-options-wrapper {
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.checkboxlist-count-wrapper {
+  margin-left: 20px;
+  float: right;
+}

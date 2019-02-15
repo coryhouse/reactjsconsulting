@@ -1,0 +1,14 @@
+div.tip {
+  text-decoration: none;
+  border: #c0c0c0 1px dotted;
+  text-align: left;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 10000;
+  background-color: #f0f0f0;
+  left: 0px;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  text-decoration: none;
+}
