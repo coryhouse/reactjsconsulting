@@ -14,9 +14,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app",
+    "extends": [
+      "react-app",
+      "plugin:you-dont-need-lodash-underscore/compatible",
+      "plugin:promise/recommended"
+    ],
     "plugins": [
-      "react-hooks"
+      "react-hooks",
+      "promise"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error"
