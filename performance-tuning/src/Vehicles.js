@@ -51,14 +51,9 @@ const Vehicles = ({
     };
   }, []);
 
-  useEffect(
-    () => {
-      setGridContainerHeight(
-        windowInnerHeight - vehicleTableRefDistanceFromTop
-      );
-    },
-    [windowInnerHeight]
-  );
+  useEffect(() => {
+    setGridContainerHeight(windowInnerHeight - vehicleTableRefDistanceFromTop);
+  }, [windowInnerHeight]);
 
   return (
     <>
@@ -151,3 +146,5 @@ function areEqual(prevProps, nextProps) {
 
 // To avoid needless renders, wrap in React.memo
 export default React.memo(Vehicles, areEqual);
+
+//export default Vehicles;
