@@ -2,6 +2,7 @@ import { configure, addDecorator } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
+import "storybook-chromatic";
 
 // By convention, automatically load all .stories.js files in src/components in Storybook
 // More: https://storybook.js.org/basics/writing-stories/#loading-stories-dynamically
