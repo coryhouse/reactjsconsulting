@@ -1,9 +1,3 @@
-import axios from "axios";
-
-export async function post(url, data, config = {}) {
-  return axios.post(url, data, config).catch(handleError);
-}
-
 export async function handleResponse(response) {
   if (response.ok) return response.json();
   if (response.status === 400) {
@@ -15,8 +9,8 @@ export async function handleResponse(response) {
   throw new Error("Network response was not ok.");
 }
 
+// In a real app, would likely call an error logging service.
 export function handleError(error) {
-  // TODO: Call an error logging service.
   // eslint-disable-next-line no-console
   console.error("API call failed. " + error);
   throw error;

@@ -3,7 +3,6 @@ import { Router } from "@reach/router";
 import Spinner from "./Spinner";
 import ErrorBoundary from "./ErrorBoundary";
 import Home from "./Home";
-import Contact from "./Contact";
 import Nav from "./Nav";
 import "./App.css";
 
@@ -19,7 +18,6 @@ function App() {
           <Router>
             <Home path="/" />
             <About path="about" />
-            <Contact path="contact" />
           </Router>
         </Suspense>
       </ErrorBoundary>
