@@ -140,11 +140,11 @@ const Vehicles = ({
 };
 
 // For perf, only re-render this table when a new search is performed.
-function areEqual(prevProps, nextProps) {
-  return prevProps.searchTimestamp === nextProps.searchTimestamp;
-}
+// function areEqual(prevProps, nextProps) {
+//   return prevProps.searchTimestamp === nextProps.searchTimestamp;
+// }
 
 // To avoid needless renders, wrap in React.memo
-export default React.memo(Vehicles, areEqual);
+// export default React.memo(Vehicles, areEqual);
 
-//export default Vehicles;
+export default Vehicles;
