@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import TextInput from "./TextInput";
 import { text, boolean } from "@storybook/addon-knobs";
+import { host } from "storybook-host";
 
 // Consider https://github.com/Sambego/storybook-state instead
 const TextInputExample = ({ value = "", required = false }) => {
@@ -23,6 +24,14 @@ const TextInputExample = ({ value = "", required = false }) => {
 };
 
 storiesOf("TextInput", module)
+  .addDecorator(
+    host({
+      title: "TextInput",
+      align: "center bottom",
+      height: "80%",
+      width: 400
+    })
+  )
   .add("Docs (no change handler)", () => (
     <TextInput
       label={text("label", "First Name")}
