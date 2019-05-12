@@ -28,7 +28,7 @@ const TextInput = ({
   return (
     <>
       <label className={styles.label} htmlFor={id}>
-        {label}
+        {label} {required && "*"}
       </label>
       <input
         type={type}
