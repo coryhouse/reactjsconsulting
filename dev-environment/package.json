@@ -5,12 +5,12 @@
   "scripts": {
     "start": "run-p start:dev start:api",
     "start:dev": "react-scripts start",
+    "start:api": "node tools/apiServer.js",
     "build": "react-scripts build --stats && webpack-bundle-analyzer build/bundle-stats.json -m server",
     "test": "react-scripts test",
     "test:ci": "cross-env NODE_ENV=CI react-scripts test",
     "eject": "react-scripts eject",
     "prestart:api": "node tools/createMockDb.js",
-    "start:api": "node tools/apiServer.js",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "cypress": "cypress",
@@ -23,7 +23,7 @@
     "bootstrap": "^4.3.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "3.0.0",
+    "react-scripts": "3.0.1",
     "reactstrap": "^7.1.0"
   },
   "devDependencies": {
