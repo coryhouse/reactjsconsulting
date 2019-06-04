@@ -77,6 +77,11 @@ const authors = [
   { id: 3, name: "Dan Wahlin" }
 ];
 
+const users = [
+  { id: 1, email: "test@example.com", password: "123" },
+  { id: 2, email: "bob@example.com", password: "345" }
+];
+
 const newCourse = {
   id: null,
   title: "",
@@ -88,5 +93,6 @@ const newCourse = {
 module.exports = {
   newCourse,
   courses,
-  authors
+  authors,
+  users
 };
