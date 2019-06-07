@@ -1,5 +1,5 @@
 import { configure, addDecorator, addParameters } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import "storybook-chromatic";
@@ -11,15 +11,8 @@ function loadStories() {
 }
 
 // Globally enable addons
-addDecorator(checkA11y);
+addDecorator(withA11y);
 addDecorator(withInfo);
 addDecorator(withKnobs);
-
-// Enable dark mode
-addParameters({
-  options: {
-    theme: themes.dark
-  }
-});
 
 configure(loadStories, module);

@@ -53,7 +53,7 @@ TextInput.propTypes = {
   label: PropTypes.string.isRequired,
 
   /** Input type */
-  type: PropTypes.oneOf("text", "email", "number").isRequired,
+  type: PropTypes.oneOf(["text", "email", "number"]).isRequired,
 
   /** Input value */
   value: PropTypes.string.isRequired,
@@ -76,7 +76,8 @@ TextInput.propTypes = {
 
 TextInput.defaultProps = {
   required: false,
-  error: ""
+  error: "",
+  type: "text"
 };
 
 export default TextInput;
