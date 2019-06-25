@@ -1,0 +1,46 @@
+header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 600px;
+}
+
+main > h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+main p {
+  background-color: #f8ffff;
+  color: #276f86;
+  padding: 20px 10px;
+  box-shadow: 0 0 0 1px #a9d5de inset, 0 0 0 0 transparent;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    max-width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #eee;
+}
+
+footer a:visited,
+footer a:visited {
+  color: blue;
+}
