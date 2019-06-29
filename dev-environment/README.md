@@ -1,4 +1,4 @@
-# ReactJSConsulting: Dev Environment
+# Dev Environment
 
 ## Quick Start
 
