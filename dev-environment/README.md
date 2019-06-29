@@ -26,11 +26,11 @@ This project uses [Prettier](https://prettier.io) to autoformat code via a pre-c
 | Script          | Description                                                                                                                        |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | start           | Start the app and [json-server](https://github.com/typicode/json-server) mock API                                                  |
-| test            | Run automated tests via [Jest](https://jestjs.io) and [React Testing Library](https://github.com/kentcdodds/react-testing-library) |
+| test            | Run automated unit tests via [Jest](https://jestjs.io) and [React Testing Library](https://github.com/kentcdodds/react-testing-library) |
 | cypress         | Run automated integration tests via [Cypress](https://www.cypress.io/)                                                             |
 | build           | Generate the production build                                                                                                      |
 | storybook       | Run [Storybook](https://storybook.js.org/) to build components in isolation and view existing components                           |
-| cypress         | Run tests via [Cypress](http://cypress.io)                                                                                         |
+| cypress         | Run automated integration tests via [Cypress](http://cypress.io)                                                                                         |
 | build-storybook | Build Storybook for production deployment (not currently hosted anywhere)                                                          |
 | chromatic       | Run image tests on Storybook using [Chromatic](https://www.chromaticqa.com/)                                                       |
 
