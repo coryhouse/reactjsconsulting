@@ -2,6 +2,7 @@
 
 ## Quick Start
 
+First, [install dependencies]
 ```
 npm i
 npm start
@@ -11,13 +12,13 @@ This installs dependencies, and starts the app and mock API.
 
 ## Recommended Extensions
 
+It's recommended to install the extensions listed in the .vscode directory. VS Code will automatically prompt you to install the extensions the first time you open the project.
+
 This project uses [Prettier](https://prettier.io) to autoformat code via a pre-commit hook. It's recommended to also run the Prettier extension in VS Code and enable format on save:
 
 1. Install the Prettier extension
 1. Open VS Code settings
 1. Search for "Format on save" and enable
-
-It's recommended to install the extensions listed in the .vscode directory. VS Code will automatically prompt you to install the extensions the first time you open the project.
 
 ## npm Scripts
 
