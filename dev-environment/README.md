@@ -1,8 +1,7 @@
-# React Dev Environment
+# ReactJSConsulting: Dev Environment
 
 ## Quick Start
 
-First, [install dependencies]
 ```
 npm i
 npm start
