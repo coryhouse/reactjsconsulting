@@ -30,7 +30,6 @@ This project uses [Prettier](https://prettier.io) to autoformat code via a pre-c
 | cypress         | Run automated integration tests via [Cypress](https://www.cypress.io/)                                                             |
 | build           | Generate the production build                                                                                                      |
 | storybook       | Run [Storybook](https://storybook.js.org/) to build components in isolation and view existing components                           |
-| cypress         | Run automated integration tests via [Cypress](http://cypress.io)                                                                                         |
 | build-storybook | Build Storybook for production deployment (not currently hosted anywhere)                                                          |
 | chromatic       | Run image tests on Storybook using [Chromatic](https://www.chromaticqa.com/)                                                       |
 
