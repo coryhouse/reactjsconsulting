@@ -36,4 +36,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Mock API
 
-This project uses json-server as a mock API. It utilizes mock data in `/tools/mockData.js` to populate `db.json` when you run `npm start`. The `db.json` file simulates a database, so the mock API supports CRUD.
+This project uses [json-server](https://github.com/typicode/json-server) as a mock API. It utilizes mock data in `/tools/mockData.js` to populate `db.json` when you run `npm start`. The `db.json` file simulates a database, so the mock API supports CRUD.
