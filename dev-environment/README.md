@@ -3,6 +3,8 @@
 ## Quick Start
 
 ```
+git clone https://github.com/coryhouse/reactjsconsulting reactjsconsulting
+cd reactjsconsulting/dev-environment
 npm i
 npm start
 ```
