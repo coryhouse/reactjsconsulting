@@ -1,8 +1,6 @@
 ## Prerequisites
 
-Do these steps **before** the event:
-
-If you have any problems, email cory@reactjsconsulting.com.
+Please do these steps **before** the event. If you have any problems, email cory@reactjsconsulting.com.
 
 1. Install [Node 10 or newer](http://nodejs.org)
 1. Install [Git](https://git-scm.com/)
