@@ -1,0 +1,9 @@
+/* Custom theming and bootstrap grid overrides
+// $grid-breakpoints: (xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px); */
+
+/* Import Bootstrap and its default variables */
+@import "~bootstrap/scss/bootstrap-grid.scss";

@@ -1,0 +1,42 @@
+// Primary Colors
+$black: #000000;
+$white: #ffffff;
+$orange: #ff6000;
+
+//grays
+$copy: #293033; //charcoal
+$darkgray: #63686b; // graphite
+$medgray: #57505F; //plum
+$lightgray: #dbdbdb; //slate gray
+$graybg: #f2f2f2; //background gray
+
+//accent colors
+$accent: #00548A; //corporate blue
+$accentlight: #f6fcfc; //ice blue
+$links: #1E71AC; //link blue
+$error: #EB0000; //error red
+$success: #008a25; //success green
+$warning: #EBD22F; //warning yellow
+$plum: #57505F;
+$turqoise-blue: #06ABC0;
+
+//type
+$copy: #293033; //charcoal
+
+:export {
+  black: $black;
+  white: $white;
+  orange: $orange;
+  charcoal-basetext: $copy;
+  dark-gray: $darkgray;
+  accent: $accent;
+  ice-blue: $accentlight;
+  link-blue: $links;
+  bg-gray: $graybg;
+  light-gray: $lightgray;
+  plum: $plum;
+  success: $success;
+  turqoise-blue: $turqoise-blue;
+  error: $error;
+  warning: $warning;
+}

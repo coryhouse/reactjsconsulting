@@ -1,0 +1,30 @@
+body {
+  margin: 40px;
+}
+
+.grid {
+  display: grid;
+  /* 
+  Each value represents a column. 
+  Note the optional names before each column def. 
+  Can have multiple, space delimited. 
+  Using repeat to declare multiple columns with the same settings in a row. */
+  grid-template-columns: [first-line1] 1fr [line2] repeat(2, 20px [col-end]);
+
+  /* each value represents a row */
+  grid-template-rows: [row-one] 1fr [row-two] 4fr [last-row] 300px;
+  background: lightgrey;
+  grid-gap: 20px;
+}
+
+/* style all immediate children */
+.grid > * {
+  background-color: orange;
+  text-align: center;
+}
+
+/* put 2nd div in last column and row, referenced via name */
+#div2 {
+  grid-column-start: col-end;
+  grid-row-start: last-row;
+}

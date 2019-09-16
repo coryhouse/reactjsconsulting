@@ -1,0 +1,10 @@
+@import "colors";
+
+$mobile_only: "only screen and (max-width: 767px)";
+$tablet_only: "only screen and (min-width: 768px) and (max-width: 991px)";
+$tablet: "only screen and (min-width: 768px)";
+$desktop: "only screen and (min-width: 992px)";
+
+//Fonts
+$fontFamily: Arial, Helvetica, sans-serif;
+$fontSizeMedium: 15px;

@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/utilities/screenreaders";
+@import "~bootstrap/scss/utilities/visibility";
+
+.sr-only {
+  margin: -1px;
+}
+
+.sr-only--focusable:active,
+.sr-only--focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}

@@ -1,0 +1,56 @@
+/* This code is subject to LICENSE in root of this repository https://github.com/reach/reach-ui* and is modified here as/
+
+/* Used to detect in JavaScript if apps have loaded styles or not. */
+:root {
+  --reach-dialog: 1;
+}
+
+[data-reach-dialog-overlay] {
+  background: hsla(0, 0%, 0%, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &.tooltip {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    border: 1px solid $lightgray;
+    min-width: 200px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+  }
+}
+
+[data-reach-dialog-content] {
+  background: white;
+  padding: 20px;
+  align-self: center;
+  position: relative;
+  margin: auto;
+}
+
+.tooltip__pointer {
+  display: block;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-left: 3px solid $lightgray;
+  border-top: 3px solid $lightgray;
+  background: $white;
+  position: absolute;
+  z-index: 2;
+}

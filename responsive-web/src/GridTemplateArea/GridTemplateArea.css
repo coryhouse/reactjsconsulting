@@ -1,0 +1,34 @@
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.footer {
+  grid-area: footer;
+}
+
+/* Note mobile first CSS. Desktop grid is applied via media query below */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+@media only screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns: 50px 1fr 50px 200px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+  }
+}

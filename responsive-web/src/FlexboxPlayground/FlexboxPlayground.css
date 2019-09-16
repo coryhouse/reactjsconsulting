@@ -1,0 +1,44 @@
+/* This is styled mobile first    
+    1. Style for mobile
+    2. Add styles when it looks like shit
+*/
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  justify-content: last baseline;
+  /* Aligns lines, so only applies when wrapping */
+  align-content: space-around;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.box {
+  background-color: orange;
+  border: solid 1px gray;
+  text-align: center;
+  flex: 1 1 400px;
+}
+
+@media (width: 500px) {
+  .container {
+    flex-flow: row wrap;
+  }
+
+  .box {
+    flex: 1 1 200px;
+  }
+}
+
+.container :nth-child(odd) {
+  /* flex-grow: 2; */
+  flex-shrink: 4;
+  min-width: 40px;
+  background-color: gainsboro;
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
