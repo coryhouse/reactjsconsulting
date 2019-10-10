@@ -15,6 +15,7 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
+const db = router.db;
 
 // Can pass a limited number of options to this to override (some) defaults. See https://github.com/typicode/json-server#api
 const middlewares = jsonServer.defaults({
@@ -64,6 +65,14 @@ server.listen(port, () => {
 });
 
 // Centralized logic
+
+// json-server uses lowdb behind the scenes. So showing how to call it directly here to get the relevant record. lowdb docs: https://github.com/typicode/lowdb
+// this is just an unused example here for reference
+server.get("/users/:id", function(req, res, next) {
+  const state = db.getState(); // returns entire db
+  const users = state.payees.find(p => p.id === parseInt(req.params.id)); // find the requested record
+  return res.status(200).json(users);
+});
 
 // Returns a URL friendly slug
 function createSlug(value) {
