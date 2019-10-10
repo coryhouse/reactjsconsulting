@@ -1,0 +1,37 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+th,
+td {
+  background: #eee;
+  padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  table thead {
+    display: none;
+  }
+  /* 
+  table tr, table td {
+    border-bottom: 1px solid #ddd;
+  } */
+
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  table td {
+    display: flex;
+  }
+
+  table td::before {
+    content: attr(label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+  }
+}
