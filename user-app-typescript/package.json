@@ -1,0 +1,60 @@
+{
+  "name": "athena-watertown",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "@types/jest": "24.0.22",
+    "@types/node": "12.12.6",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.3",
+    "@types/react-router-dom": "^5.1.2",
+    "bootswatch": "^4.3.1",
+    "json-server": "^0.15.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "typescript": "3.7.2"
+  },
+  "scripts": {
+    "start": "run-p start:app start:api",
+    "start:app": "react-scripts start",
+    "start:api": "json-server --port 3001 --watch db.json --routes routes.json",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cy": "start-server-and-test start http://localhost:3000 cy:open",
+    "cy:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^5.0.2",
+    "@testing-library/react": "^9.3.2",
+    "@types/testing-library__cypress": "^5.0.1",
+    "cypress": "^3.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-cypress": "^2.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "start-server-and-test": "^1.10.6"
+  }
+}
