@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.27.0",
     "randomcolor": "^0.5.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
